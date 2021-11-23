@@ -1,1 +1,36 @@
-en cada rama un curso de diferente autor
+install:
+>npm init
+>npm i -y
+>npm install typescript -g
+
+FORMA1: ejecutar codigo typescript , compilar
+>tsc 'nombredelarchivo'
+
+FORMA2: configurando un archivo
+>tsc --init
+    se crea carpeta tsconfig.json, ahi dentro descomentar todo lo que dçnecesitamos
+    "outDir": "./dist",
+    "rootDir": "./src",
+para compilar 
+>tsc
+para ejecutar
+>node dist/index.js
+
+PARA COMPILAR varios archivos typescript y no 1 por 1
+en una ventana aparte ejecutamos y ira compilando cada que guardemos cambios automaticamente(ira creando los .js dentro de dist) y no hacer tsc cada rato 
+>tsc --watch
+
+
+-----------------------------------------------------------------------------------
+
+//la extension Quakka es para los datos de los resultados en esta pantalla al escribir
+// para activar   ctrl+p , >quokka.js: Focus Active Qoukka File
+//para desactivar ctrl+p , >quokka.js: stop all
+
+----------------------------------------------------------------------------------------
+
+
+para correr archivo typescript sin compilar
+> npm i -g ts-node
+para ejecutar
+>ts-node nombreArchivotypescript
